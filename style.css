@@ -1,0 +1,108 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+  }
+
+  /* Heading */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Input and Button */
+  #inputfield {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  #inputfield:focus {
+    border-color: #007bff;
+  }
+
+  #addbtn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  #addbtn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Task Counter */
+  #taskCounter {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  /* Task List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 350px;
+    margin-top: 20px;
+  }
+
+  li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  li span {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  li button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  li button:nth-child(3) { /* Delete Button */
+    background-color: #dc3545;
+    color: white;
+  }
+
+  li button:nth-child(3):hover {
+    background-color: #b02a37;
+  }
+
+  li button:nth-child(4) { /* Edit Button */
+    background-color: #ffc107;
+    color: black;
+  }
+
+  li button:nth-child(4):hover {
+    background-color: #e0a800;
+  }
+
+  /* Checkbox styling */
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
